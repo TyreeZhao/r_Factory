@@ -32,7 +32,7 @@ export default class Header extends Component {
 						<Link activeClassName={style.active} href="/profile/john">users</Link>
 					*/}
 					<Link activeClassName={style.active} href="/">Finance</Link>
-					<Link activeClassName={style.active} href="/profile">Members</Link>
+					<Link activeClassName={style.active} href="/members">Members</Link>
 				</nav>
 				<div className={style.time}>{new Date(time).toLocaleString()}</div>
 			</header>
