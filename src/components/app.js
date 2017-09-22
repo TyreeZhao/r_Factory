@@ -29,5 +29,3 @@ export default class App extends Component {
 		);
 	}
 }
-
-document.write('it works')

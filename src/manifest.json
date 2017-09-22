@@ -1,6 +1,6 @@
 {
-  "name": "Preact PWA",
-  "short_name": "Preact PWA",
+  "name": "r_Factory",
+  "short_name": "r_Factory",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

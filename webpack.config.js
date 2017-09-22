@@ -13,7 +13,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.BannerPlugin('This file is created by zhaoTong')
+    new webpack.BannerPlugin('This file is created by TongZhao')
   ],
   resolve: { fallback: path.join(__dirname, "node_modules") },
   resolveLoader: { fallback: path.join(__dirname, "node_modules") }

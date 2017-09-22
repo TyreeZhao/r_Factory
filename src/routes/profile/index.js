@@ -2,45 +2,21 @@ import { h, Component } from 'preact';
 import style from './style';
 
 export default class Profile extends Component {
-	state = {
-		time: Date.now(),
-		count: 10
-	};
-
-	// gets called when this route is navigated to
-	componentDidMount() {
-		// start a timer for the clock:
-		this.timer = setInterval(this.updateTime, 1000);
-	}
-
-	// gets called just before navigating away from the route
-	componentWillUnmount() {
-		clearInterval(this.timer);
-	}
-
-	// update the current time
-	updateTime = () => {
-		this.setState({ time: Date.now() });
-	};
-
-	increment = () => {
-		this.setState({ count: this.state.count+1 });
-	};
-
 	// Note: `user` comes from the URL, courtesy of our router
 	render({ user }, { time, count }) {
 		return (
 			<div class={style.profile}>
-				<h1>Profile: {user}</h1>
-				<p>This is the user profile for a user named { user }.</p>
-
-				<div>Current time: {new Date(time).toLocaleString()}</div>
-
-				<p>
-					<button onClick={this.increment}>Click Me</button>
-					{' '}
-					Clicked {count} times.
-				</p>
+				<p> YunHui Zeng 大曾 </p>
+				<p> YiHang Sun 航兄 </p>
+				<p> PingYu Liu 平鱼 </p>
+				<p> Qi Song 宋琦 </p>
+				<p> Yan Zheng 岩总 </p>
+				<p> Feng Xue 薛神 </p>
+				<p> Nan Wang 楠锅 </p>
+				<p> He Liu 主席 </p>
+				<p> Tong Zhao 佟 </p>
+				<p> YiFan Sun ivan </p>
+				<p> Song Mu 松哥 </p>
 			</div>
 		);
 	}
