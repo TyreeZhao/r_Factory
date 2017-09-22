@@ -1,4 +1,5 @@
 var webpack = require('webpack')
+var path = require('path')
 
 module.exports = {
   entry: './entry.js',
@@ -13,5 +14,7 @@ module.exports = {
   },
   plugins: [
     new webpack.BannerPlugin('This file is created by zhaoTong')
-  ]
+  ],
+  resolve: { fallback: path.join(__dirname, "node_modules") },
+  resolveLoader: { fallback: path.join(__dirname, "node_modules") }
 }
