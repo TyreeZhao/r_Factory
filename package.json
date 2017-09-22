@@ -1,0 +1,33 @@
+{
+  "name": "rFactory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "./node_modules/.bin/webpack --progress --colors --watch",
+    "dev": "webpack-dev-server --progress --colors --watch",
+    "start": "if-env NODE_ENV=production && yarn run -s serve || yarn run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "test": "eslint src && preact test"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "eslint-config-synacor": "^2.0.0",
+    "if-env": "^1.0.0",
+    "preact-cli": "^1.4.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
+    "preact-router": "^2.5.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
