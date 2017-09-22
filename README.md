@@ -20,7 +20,7 @@
 ## Installing
 
 ### Frontend
-* `yarn install`
+* `yarn`
 
 ### dev
 * `yarn dev`
