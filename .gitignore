@@ -3,5 +3,9 @@ node_modules
 npm-debug.log
 .DS_Store
 .git/
+<<<<<<< Updated upstream
 .yarn-error.log
 
+=======
+yarn-error.log
+>>>>>>> Stashed changes

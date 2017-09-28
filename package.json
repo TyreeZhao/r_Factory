@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "webpack": "./node_modules/.bin/webpack --progress --colors --watch",
-    "dev": "webpack-dev-server --progress --colors --watch",
+    "dev": "ENV=dev webpack-dev-server --progress --colors --watch",
     "start": "if-env NODE_ENV=production && yarn run -s serve || yarn run -s dev",
     "build": "preact build",
     "serve": "preact build && preact serve",

@@ -23,6 +23,11 @@ export default class Home extends Component {
 					<div>{'0'}</div>
 					<div>{'￥420'}</div>
 				</div>
+				<div className={style.cell}>
+					<div>{'2017-19-23'}</div>
+					<div>{'-￥420'}</div>
+					<div>{'￥0'}</div>
+				</div>
 			</div>
 		);
 	}
