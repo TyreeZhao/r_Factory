@@ -9,7 +9,6 @@
     "start": "if-env NODE_ENV=production && yarn run -s serve || yarn run -s dev",
     "build": "preact build",
     "serve": "preact build && preact serve",
-    "dev": "preact watch",
     "test": "eslint src && preact test"
   },
   "eslintConfig": {
@@ -22,6 +21,8 @@
     "preact-cli": "^1.4.1"
   },
   "dependencies": {
+    "compression-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.7",
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",
