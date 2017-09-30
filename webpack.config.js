@@ -60,7 +60,9 @@ if (env === 'dev') {
 }
 
 const webpackConfig = {
-  entry: './entry.js',
+  entry: {
+    src: [path.join(__dirname, 'src/index.js')],
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].[hash:8].dist.js',
@@ -73,30 +75,15 @@ const webpackConfig = {
         return m[e]
       })(env),
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          }
-        ]
-        }
-    ]
+  devServer: {
+    port: 48770,
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: true
   },
-  resolve: { fallback: path.join(__dirname, "node_modules") },
-  resolveLoader: { fallback: path.join(__dirname, "node_modules") },
+  module: {
+  },
   plugins,
 }
 
