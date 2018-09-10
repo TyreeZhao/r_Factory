@@ -1,4 +1,4 @@
-# r_Factory Frontend
+# r_Factory front-end
 
 ## Requirements
 * Node: test ok in [v7.5.0].
